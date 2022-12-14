@@ -8,6 +8,7 @@
 
     // debería anular la variable de sesión que identifica a (un) administrador, y regresar al index,php
 
-    unset ($_SESSION ['admin'] ) ; 
+    // unset ($_SESSION ['admin'] ) ; 
+    session_destroy() ;
 
     header("location: ../index.php");
